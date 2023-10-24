@@ -18,7 +18,6 @@ public class Duplicate {
 
             var0[var2] *= -1;
         }
-
         return var0.length;
     }
 }
