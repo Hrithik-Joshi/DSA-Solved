@@ -5,9 +5,9 @@ public class SortColors {
     }
 
     public static void sortColors(int[] nums) {
+        int zero=0;
         int one = 0;
         int two = 0;
-        int zero = 0;
         // using swtich case to count the zero one and two and making changes in the
         // array accordingly
         for (int i = 0; i < nums.length; i++) {
