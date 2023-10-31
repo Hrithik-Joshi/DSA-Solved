@@ -15,10 +15,10 @@ public class SubArraySumEqualK {
         hm.put(0, 1);
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
-            hm.put(sum, hm.getOrDefault(sum, 0) + 1);
             if (hm.containsKey(sum - k)) {
                 count += hm.get(sum);
             }
+            hm.put(sum, hm.getOrDefault(sum, 0) + 1);
         }
         return count;
     }
